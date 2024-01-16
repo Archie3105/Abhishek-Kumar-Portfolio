@@ -489,9 +489,7 @@ nav {
 .progress-3,
 .progress-4,
 .progress-5,
-.progress-6,
-.progress-7,
-.progress-8 {
+.progress-6{
   border: 2px solid var(--orange-color);
 }
 
@@ -585,7 +583,7 @@ nav {
   font-weight: 600;
 }
 
-.rating-7 {
+/* .rating-7 {
   width: 50%;
   background-color: var(--orange-color);
   position: relative;
@@ -613,7 +611,7 @@ nav {
   top: 100%;
   font-size: 1.7rem;
   font-weight: 600;
-}
+} */
 
 .education-content {
   width: 90%;
