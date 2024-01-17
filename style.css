@@ -79,6 +79,7 @@ h6 {
   transition: all 0.4s;
   letter-spacing: 2px;
   color: var(--red-color);
+  border-radius: 3rem;
   margin-right: 1rem;
   border: 2px solid var(--red-color);
 }
@@ -86,13 +87,22 @@ h6 {
 .btn:hover {
   background-color: var(--red-hover-color);
   color: var(--light-color);
+  box-shadow: 0px 0px 15px 10px var(--red-hover-color);
 }
 
 .day-mode {
   font-size: 2.5rem;
+  border: none;
   cursor: pointer;
+  padding: 1rem;
+  border: 1px solid var(--tint-color);
+  border-radius: 50%;
+  transition: all 0.6s;
 }
-
+.day-mode:hover{
+  border: 1px solid var(--light-color);
+  box-shadow: 0px 0px 8px 4px #fff;
+}
 .night-mode {
   font-size: 2.5rem;
   cursor: pointer;
@@ -104,6 +114,7 @@ h6 {
 
 .night-mode:hover {
   border: 1px solid var(--dark-color);
+  box-shadow: 0px 0px 5px 2px black;
 }
 
 /* --------------header-section-start--------------------
@@ -114,7 +125,7 @@ h6 {
   align-items: center;
   justify-content: space-between;
   background-color: var(--light-color);
-  position: fixed;
+  position: relative;
   top: 0;
   width: 100%;
   max-width: 1500px;
@@ -127,8 +138,11 @@ h6 {
   width: 60px;
   border: 3px solid var(--red-color);
   border-radius: 50%;
+  transition: all 0.6s;
 }
-
+.logo-img:hover{
+  box-shadow: 0px 0px 15px 10px var(--red-hover-color);
+}
 nav {
   flex-basis: 60%;
 }
@@ -200,6 +214,8 @@ nav {
 #home {
   position: relative;
   clip-path: polygon(100% 0, 100% 100%, 75% 85%, 0 100%, 0 0);
+  background-color: #808283;
+  box-shadow: 0px 0px 100px 2px rgb(45, 54, 59);
 }
 
 .hero-img {
@@ -265,7 +281,7 @@ nav {
 }
 
 .social-link:hover {
-  color: var(--light-color);
+  color: lightgrey;
 }
 
 /* ----------------home-section-end----------------------
@@ -349,8 +365,12 @@ nav {
 .about-img {
   width: 100%;
   height: 100%;
+  transition: all 0.6s;
+  box-shadow: 0px 0px 11px 5px black;
 }
-
+.about-img:hover{
+  box-shadow: 0px 0px 11px 5px rgb(162, 160, 160);
+}
 .about-social-link {
   color: var(--dark-color);
   font-size: 3rem;
@@ -358,9 +378,9 @@ nav {
 }
 
 .about-social-link:hover {
-  color: var(--orange-color) !important;
+  color: rgb(138, 123, 123) !important;
+  
 }
-
 .btn-box {
   margin: 2rem 0 0.5rem 0;
 }
@@ -908,7 +928,8 @@ nav {
   font-size: 1.5rem;
   font-weight: 500;
   cursor: pointer;
-  transition: all 0.4s;
+  border-radius: 3rem;
+  transition: all 0.6s;
   letter-spacing: 2px;
   color: var(--green-color);
   margin-right: 1rem;
@@ -919,6 +940,7 @@ nav {
 #submitbtn:hover {
   color: var(--light-color);
   background-color: var(--green-color);
+  box-shadow: 0px 0px 15px 10px var(--green-color);
 }
 
 .right-contact {
@@ -1544,6 +1566,7 @@ nav {
   }
 
   #home {
+    top: 6vh;
     height: 85vh;
     clip-path: polygon(100% 0, 100% 100%, 70% 95%, 0 100%, 0 0);
   }
@@ -1779,6 +1802,17 @@ nav {
     font-size: 1.2rem;
   }
 
+  #scrollToTopBtn {
+    position: fixed;
+    bottom: 45px;
+    right: 5px;
+    background-color: #6d6e70;
+    color: #fff;
+    padding: 4px 10px;
+  }
+  #scrollToTopBtn i{
+    font-size: small;
+  }
   .footer-para {
     font-size: 1.2rem;
   }
@@ -1801,3 +1835,29 @@ nav {
 }
 
 /* media-queries-end  */
+
+
+/* ***************buttom-top button**************** */
+
+
+#scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  background-color: #6d6e70;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#scrollToTopBtn i{
+  font-size: large;
+}
+#scrollToTopBtn:hover {
+  background-color: #808283;
+  box-shadow: 0px 0px 20px 5px lightskyblue;
+}
