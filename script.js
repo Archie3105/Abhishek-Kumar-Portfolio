@@ -199,3 +199,25 @@ $(".day-mode").click(function () {
   $(".left-contact").css({ "background-color": "#fff", color: "#000" });
   $(".right-contact").css({ "background-color": "#dddddd", color: "#000" });
 });
+
+
+/* ***************buttom-top button**************** */
+
+document.addEventListener("DOMContentLoaded", function () {
+  var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+  window.addEventListener("scroll", function () {
+      // Show or hide the button based on the scroll position
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          scrollToTopBtn.style.display = "block";
+      } else {
+          scrollToTopBtn.style.display = "none";
+      }
+  });
+
+  scrollToTopBtn.addEventListener("click", function () {
+      // Scroll to the top of the page when the button is clicked
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+  });
+});
