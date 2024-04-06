@@ -32,16 +32,16 @@ window.addEventListener("scroll", () => {
   let _progressBar4 = document.querySelectorAll(".rating").item(3);
   let _progressBar5 = document.querySelectorAll(".rating").item(4);
   let _progressBar6 = document.querySelectorAll(".rating").item(5);
-  // let _progressBar7 = document.querySelectorAll(".rating").item(6);
-  // let _progressBar8 = document.querySelectorAll(".rating").item(7);
+  let _progressBar7 = document.querySelectorAll(".rating").item(6);
+  let _progressBar8 = document.querySelectorAll(".rating").item(7);
   let _progressload1 = _progressBar1.getBoundingClientRect().top;
   let _progressload2 = _progressBar2.getBoundingClientRect().top;
   let _progressload3 = _progressBar3.getBoundingClientRect().top;
   let _progressload4 = _progressBar4.getBoundingClientRect().top;
   let _progressload5 = _progressBar5.getBoundingClientRect().top;
   let _progressload6 = _progressBar6.getBoundingClientRect().top;
-  // let _progressload7 = _progressBar7.getBoundingClientRect().top;
-  // let _progressload8 = _progressBar8.getBoundingClientRect().top;
+  let _progressload7 = _progressBar7.getBoundingClientRect().top;
+  let _progressload8 = _progressBar8.getBoundingClientRect().top;
   let screenPositon = window.innerHeight;
   if (
     _progressload1 < screenPositon ||
@@ -49,9 +49,9 @@ window.addEventListener("scroll", () => {
     _progressload3 < screenPositon ||
     _progressload4 < screenPositon ||
     _progressload5 < screenPositon ||
-    _progressload6 < screenPositon 
-    // _progressload7 < screenPositon ||
-    // _progressload8 < screenPositon
+    _progressload6 < screenPositon ||
+    _progressload7 < screenPositon ||
+    _progressload8 < screenPositon 
   ) {
     _progressBar1.classList.add("rating-1");
     _progressBar2.classList.add("rating-2");
@@ -59,8 +59,8 @@ window.addEventListener("scroll", () => {
     _progressBar4.classList.add("rating-4");
     _progressBar5.classList.add("rating-5");
     _progressBar6.classList.add("rating-6");
-    // _progressBar7.classList.add("rating-7");
-    // _progressBar8.classList.add("rating-8");
+    _progressBar7.classList.add("rating-7");
+    _progressBar8.classList.add("rating-8");
   } else {
     _progressBar1.classList.remove("rating-1");
     _progressBar2.classList.remove("rating-2");
@@ -68,8 +68,8 @@ window.addEventListener("scroll", () => {
     _progressBar4.classList.remove("rating-4");
     _progressBar5.classList.remove("rating-5");
     _progressBar6.classList.remove("rating-6");
-    // _progressBar7.classList.remove("rating-7");
-    // _progressBar8.classList.remove("rating-8");
+    _progressBar7.classList.remove("rating-7");
+    _progressBar8.classList.remove("rating-8");
   }
 });
 
@@ -200,6 +200,19 @@ $(".day-mode").click(function () {
   $(".right-contact").css({ "background-color": "#dddddd", color: "#000" });
 });
 
+// *********************Form Submit******************
+
+// const sendEmail = () => {
+//   Email.send({
+//     Host:"smtp.gmail.com",
+//     Username:"Archie3105",
+//     Password: "archieiscool",
+//     To: "career.wipro0.com@gmail.com",
+//     From: document.getElementById("email").value,
+//     Subject:"New Contact Form Enquiry",
+//     Body:"And This Is The Body. It's Good.",
+//   })
+// }
 
 /* ***************buttom-top button**************** */
 
@@ -221,3 +234,5 @@ document.addEventListener("DOMContentLoaded", function () {
       document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
   });
 });
+
+
