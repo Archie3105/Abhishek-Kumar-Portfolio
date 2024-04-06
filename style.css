@@ -156,7 +156,7 @@ nav {
 .nav-link {
   font-size: 1.6rem;
   letter-spacing: 0.5px;
-  font-weight: 500;
+  font-weight: 700;
   color: var(--dark-color);
   transition: all 2s;
   padding: 0.3rem 0;
@@ -173,7 +173,7 @@ nav {
   left: 0;
   content: "";
   position: absolute;
-  border: 0px solid var(--red-color);
+  border: 1px solid var(--red-color);
   width: 0%;
   transition: all 0.5s linear;
 }
@@ -184,9 +184,10 @@ nav {
   left: 0;
   content: "";
   position: absolute;
-  border: 0px solid var(--red-color);
+  border: 1px solid var(--red-color);
   width: 0%;
   transition: all 0.5s linear;
+
 }
 
 .nav-link:hover::before,
@@ -194,8 +195,10 @@ nav {
 .hamburger-nav-link:hover:before,
 .hamburger-nav-link:hover:after {
   width: 100%;
-  border: 1px solid var(--orange-color-color);
+  background-color: aqua;
+  color: aqua;
 }
+
 
 #hamburger {
   display: none;
@@ -509,7 +512,9 @@ nav {
 .progress-3,
 .progress-4,
 .progress-5,
-.progress-6{
+.progress-6,
+.progress-7,
+.progress-8{
   border: 2px solid var(--orange-color);
 }
 
@@ -603,7 +608,7 @@ nav {
   font-weight: 600;
 }
 
-/* .rating-7 {
+.rating-7 {
   width: 50%;
   background-color: var(--orange-color);
   position: relative;
@@ -619,19 +624,19 @@ nav {
 }
 
 .rating-8 {
-  width: 45%;
+  width: 25%;
   background-color: var(--orange-color);
   position: relative;
 }
 
 .rating-8::after {
-  content: "45%";
+  content: "25%";
   position: absolute;
   left: 95%;
   top: 100%;
   font-size: 1.7rem;
   font-weight: 600;
-} */
+}
 
 .education-content {
   width: 90%;
